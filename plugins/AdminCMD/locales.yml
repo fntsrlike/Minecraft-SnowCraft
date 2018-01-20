@@ -1,0 +1,253 @@
+Prefix:
+  Info: '&a[INFO]&7 '
+  Error: '&4[ERROR]&7 '
+CommandMessages:
+  WrongSenderType: '&4You can''t execute this Command!'
+  NoPermission: '&4[ERROR] &7You don''t have permission to do that! &c(%perm%)'
+  NoPermissionOther: '&4[ERROR] &7You don''t have permission to do that! &c(%perm%.other)'
+  WrongUsage: '&c[ERROR] &7Wrong usage! Please use &6/%cmd% help &7 to see the correct
+    usage!'
+  TargetNotFound: '&c[ERROR] &7That player is not online.'
+  NotANumber: '&c[ERROR] &7This is not a number!'
+  WorldNotFound: '&c[ERROR] &7The world is not existing!'
+  Enabled: enabled
+  Disabled: disabled
+  NotAMob: '&c[ERROR] &7This is not a mob!'
+  NotSpawnable: '&c[ERROR] &7This mob is not spawnable!'
+  NoSpace: '&c[ERROR] &7There is no space to teleport to the given location!'
+Help:
+  Help: Help
+  Server:
+    Reload:
+      '1': Reloads the whole server.
+      '2': Reloads a single plugin.
+    UUID:
+      '1': Get the uuid of the given player.
+  Maintenance:
+    Maintenance:
+      '1': Turns the maintenance mode on
+      '2': Turns the maintenance mode off
+  Player:
+    CW:
+      '1': Toggles commandwatcher
+      '2': Toggles commandwatcher for the player
+    Fly:
+      '1': Toggles flying
+      '2': Toggles flying for the player
+    God:
+      '1': Toggles godmode
+      '2': Toggles godmode for the player
+    Enderchest:
+      '1': Opens your enderchest
+      '2': Opens the enderchest of the player
+    Gamemode:
+      '1': Toggles your gamemode. ONLY FOR EXECUTION BY A PLAYER
+      '2': Toggles the gamemode of the player
+      '3': Changes your gamemode to the given mode.
+      '4': Changes the gamemode of the player to the given mode.
+    Heal:
+      '1': Fully restores your health
+      '2': Fully restores the health of the player
+    Ip:
+      '1': Returns your ip address
+      '2': Returns the ip address of the player
+    OpenInv:
+      '1': Opens your own inventory...
+      '2': Opens the inventory of the player
+    Location:
+      '1': Returns your coordinate location
+      '2': Returns the coordinate location of the player
+    Message:
+      '1': Sends a private message to the given Player
+    Reply:
+      '1': Sends a private message to the last player who messaged you
+    Spy:
+      '1': Toggles spy mode
+      '2': Toggles spy mode for the player
+    List:
+      '1': Returns a list of all online players
+    Vanish:
+      '1': Toggles vanish mode
+      '2': Toggles vanish mode for the player
+    Mute:
+      '1': Toggles mute mode
+      '2': Toggles mute mode for the player
+  Home:
+    Home:
+      '1': List's all homes
+      '2': Teleports you to the given home
+    Sethome:
+      '1': Creates a new home at your location with the given name
+    Edithome:
+      '1': Sets the location of the given home to your location
+    Delhome:
+      '1': Deletes the given home
+  Warp:
+    Warp:
+      '1': List's all warps
+      '2': Teleports you to the given warp
+    Setwarp:
+      '1': Creates a new warp at your location with the given name
+    Editwarp:
+      '1': Sets the location of the given warp to your location
+    Delwarp:
+      '1': Deletes the given warp
+  Teleport:
+    Down:
+      '1': Teleports you to the next free space under you
+      '2': Teleports the given Player to the next free space under him
+    Up:
+      '1': Teleports you to the next free space above you
+      '2': Teleports the given Player to the next free space above him
+    Back:
+      '1': Teleports you to the last location you teleported from.
+      '2': Teleports the given player to the last location he teleported from.
+    Tpa:
+      '1': Accept or deny a teleport request.
+      '2': Send a teleport request to the given player.
+    Tpahere:
+      '1': Accept or deny a teleport request.
+      '2': Send a teleport request to the given player.
+  World:
+    Sun:
+      '1': Sets the weather to sun in your current world.
+      '2': Sets the weather to sun in the given world
+    Day:
+      '1': Sets the time to daytime in your current world.
+      '2': Sets the time to daytime in the given world
+    Night:
+      '1': Sets the time to nighttime in your current world.
+      '2': Sets the time to nighttime in the given world
+    Time:
+      '1': Sets the time to daytime in your current world or the given world
+      '2': Sets the time to nighttime in your current world or the given world
+      '3': Sets the time to the given time in your current world or the given world
+      '4': Pauses the time in your current world or the given world
+      '5': Unpauses the time in your current world or the given world
+  Mob:
+    Killall:
+      '1': Kills all the mobs in your or the given world
+    Spawnmob:
+      '1': Spawns the given mob the given amount times to the Locfation you are looking
+        to
+  Spawn:
+    Setspawn:
+      '1': Sets the spawnpoint to your location.
+    Spawn:
+      '1': Teleports you to the spawnpoint
+      '2': Teleports the given player to the spawnpoint
+Home:
+  Home: Homes
+  Set: The home was added.
+  Deleted: The home %home% was deleted.
+  Updated: The home was updated to your current location.
+  NoHome: You have not set this home. Try /home to list your homes.
+  AlreadyExisting: This home is already existing! Try /home to list all homes.
+Warp:
+  Warp: Warps
+  Set: The warp was added.
+  Deleted: The warp %warp% was deleted.
+  Updated: The warp was updated to your current location.
+  NoSuchExisitingWarp: There is no Warp with the given name!
+  AlreadyExisting: This warp is already existing! Try /warp to list all warps.
+Player:
+  CW:
+    Toggled: Your commandwatcher is now %status%
+    ToggledOther: '%player%&7''s commandwatcher is now %status%'
+    Ran: '%player%&7 ran Command: %command%'
+  God:
+    Toggled: Your godmode is now %status%
+    ToggledOther: '%player%&7''s godmode is now %status%'
+  Fly:
+    Toggled: Your fly mode is now %status%
+    ToggledOther: '%player%&7''s fly mode is now %status%'
+  Gamemode:
+    Changed: Your gamemode has been changed to %status%
+    ChangedOther: '%player%&7''s gamemode has been changed to %status%'
+  Muted:
+    Chat: You are muted!
+  Heal:
+    Self: Your health has been fully restored!
+    Other: '%player%&7''s health has been fully restored!'
+  Ip:
+    Self: Your ip address is %ip%
+    Other: '%player%&7''s ip address is %ip%'
+  Loc:
+    Self: 'Your coordinates are X: %x%  Y: %y%  Z: %z%'
+    Other: '%player%&7''s coordinates are X: %x%  Y: %y%  Z: %z%'
+  Message:
+    Format: '&6[%sender%&6]&a->&6[%target%&6]&a: &7%message%'
+  Reply:
+    NoLastPlayer: There is no last player who messaged you!
+  Spy:
+    Toggled:
+      Self: Your spy mode is now %status%
+      Other: '%player%&7''s spy mode is now %status%'
+  List:
+    Format: 'Online Players: %playerList%'
+  Vanish:
+    Toggled:
+      Self: Your invisible mode is now %status%
+      Other: '%player%&7''s invisible mode is now %status%'
+  Mute:
+    Toggled:
+      Self: Your mute has been %status%
+      Other: '%player%&7''s mute is now %status%'
+Server:
+  Reload:
+    Full: The server has been reloaded.
+    NotFound: There is no plugin by that name installed.
+    Single: The plugin has been reloaded.
+  UUID: 'The UUID of player %player%&7 is: %uuid%'
+World:
+  Weather:
+    Sun: The weather in %world% was set to sun
+  Time:
+    Pause: The time in world %world% is now paused.
+    Unpause: The time in world %world% is now unpaused.
+    Set: The time in world %world% has been set to %time%.
+  Day:
+    Set: The time in world %world% has been set to daytime.
+  Night:
+    Set: The time in world %world% has been set to nighttime.
+Mob:
+  Killall: '%num% mobs have been killed in world %world%.'
+  Spawn: '%num% mobs have been spawned at the location you are looking too.'
+Maintenance:
+  Toggled: Maintenance is now %status%.
+Spawn:
+  Set: The spawnpoint has been set to your location.
+  Teleport:
+    You: Teleported to the spawnpoint.
+    Other: '%player%&7 was teleported to the spawnpoint.'
+Teleport:
+  Down:
+    You: Teleported down.
+    Other: '%player%&7 got teleported down!'
+  Up:
+    You: Teleported up.
+    Other: '%player%&7 got teleported up!'
+  back:
+    You: You got teleported back to your last location.
+    other: '%player% &7got teleproted back to his last location.'
+    error: There is no last location saved!
+  tpa:
+    alreadyHasRequest: '%player%&7 already has a request from another player! Wait
+      120 seconds or until he accepted it.'
+    noRequest: There is no request for you!
+    sent:
+      target:
+        to: '%player%&7 wants to teleport to your location. Type /tpa yes to accept
+          it!'
+        here: '%player%&7 wants to teleport you to his location. Type /tpahere yes
+          to accept it!'
+      requester: A teleport request has been sent to %player%&7!
+    accept:
+      target: Teleporting %player%&7 to your location!
+      requester: Teleporting you to %player%&7!
+    deny:
+      target: Denying teleport request from %player%&7!
+      requester: Your teleport request to %player%&7 was denied!
+    timeout:
+      target: Teleport request from %player%&7 has timed out!
+      requester: Your teleport request to %player%&7 has timed out!

@@ -1,0 +1,40 @@
+# MySQL.Use: true=Use MySQL, false=use SQLite
+# MySQL.IP: The ip of the mysql server
+# MySQL.Port: The port of the MySQL server
+# MySQL.Database: The name of the dataabse
+# MySQL.User: The user of the database
+# MySQL.Password: The password of the user
+# Options.WorldSpawns: Set to true if you want one spawn for every world. false means one spawn for the whole server.
+# Options.DirectRespawn: Set to false if you want players to manually click the respawn button.
+# Options.Debug: Enables debugging chat.
+# Player.Format: Here you can add the prefix or suffixes to playernames.
+# Maintenance.Enabled: Enables Maintenance.
+# Maintenance.Motd.Line1: Maintenance motd line 1
+# Maintenance.Motd.Line2: Maintenance motd line 2
+# Maintenance.KickMessages: Maintenance kickmessage
+# Maintenance.Favicon: Maintenance favicon
+# Maintenance.Version: Maintenance version number
+# Maintenance.KickOnMaintenance: Kick if maintenance gets activated
+
+MySQL:
+  Use: false
+  IP: 127.0.0.1
+  Port: 3306
+  Database: minecraft
+  User: root
+  Password: password
+Options:
+  WorldSpawns: true
+  DirectRespawn: false
+  Debug: false
+Player:
+  Format: '%prefix%name%suffix'
+Maintenance:
+  Enabled: false
+  Motd:
+    Line1: '&c&nServer is in Maintenance'
+    Line2: '&eWe are actually working on the server!'
+  KickMessages: '&c&nServer is in Maintenance'
+  Favicon: /home/bukkit/Minecraft/Normal/Server/plugins/AdminCMD/maintenance.png
+  Version: Maintenance
+  KickOnMaintenance: true
