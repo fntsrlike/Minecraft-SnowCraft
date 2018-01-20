@@ -1,0 +1,7 @@
+*.bak
+*.cache
+*.db
+*.gz
+*.lck
+*.log
+*.sqlite
