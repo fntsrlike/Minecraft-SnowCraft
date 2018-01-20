@@ -1,3 +1,18 @@
-Welcome {PLAYER} on {SERVER} server
+&f
+歡迎 {PLAYER} 來到雪服，您目前在 &e{WORLD}&f 世界。
 
-This server uses AuthMeReloaded protection!
+目前主要世界是 &6Gamma&f ，歡迎前去冒險。
+提醒您，在 &6Gamma&f 的新手村範圍內，是&c無法殺生或是變動方塊的&f，
+離開新手村領地&a會收到訊息提示&f，在此之後即展開您的冒險！
+
+本伺服器聊天系統與 &9Discord&f 同步中，歡迎點擊下方連結加入我們的 Discord 群。
+讓你不再錯過訊息，更可以和大家一起語音聊天！
+加入後也別忘了透過 "/discord link" 指令來與自己的帳號綁定後始能發言～
+
+伺服器現在有&c懲罰制度&f，若違反規定會被記點，情節嚴重者 &4ban 帳號&f處置。
+其他資訊請前往 Wiki 查看，或到粉絲專頁詢問。
+--
+&3Wiki: https://mine.snowtec.org:8124/
+&3粉絲專頁: https://www.facebook.com/SnowServer/
+&3Discord: https://discord.gg/hAGrBv8
+&f

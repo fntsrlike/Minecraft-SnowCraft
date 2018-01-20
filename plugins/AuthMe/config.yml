@@ -4,7 +4,7 @@ DataSource:
     # Valid values: SQLITE, MYSQL
     backend: 'SQLITE'
     # Enable database caching, should improve database performance
-    caching: true
+    caching: false
     # Database host address
     mySQLHost: '127.0.0.1'
     # Database port
@@ -20,7 +20,7 @@ DataSource:
     # Table of the database
     mySQLTablename: 'authme'
     # Column of IDs to sort data
-    mySQLColumnId: 'id'
+    mySQLColumnId: 'uid'
     # Column for storing or checking players nickname
     mySQLColumnName: 'username'
     # Column for storing or checking players RealName
@@ -82,13 +82,13 @@ settings:
         # The next time the player joins the server, if his IP
         # is the same as last time and the timeout hasn't
         # expired, he will not need to authenticate.
-        enabled: false
+        enabled: true
         # After how many minutes should a session expire?
         # A player's session ends after the timeout or if his IP has changed
-        timeout: 10
+        timeout: 20
     # Message language, available languages:
     # https://github.com/AuthMe/AuthMeReloaded/blob/master/docs/translations.md
-    messagesLanguage: 'en'
+    messagesLanguage: 'zhtw'
     # Log level: INFO, FINE, DEBUG. Use INFO for general messages,
     # FINE for some additional detailed ones (like password failed),
     # and DEBUG for debugging
@@ -104,7 +104,7 @@ settings:
         # Hide the chat log from players who are not authenticated?
         hideChat: false
         # Allowed commands for unauthenticated players
-        allowCommands: 
+        allowCommands:
         - '/login'
         - '/register'
         - '/l'
@@ -113,15 +113,15 @@ settings:
         - '/captcha'
         # Max number of allowed registrations per IP
         # The value 0 means an unlimited number of registrations!
-        maxRegPerIp: 1
+        maxRegPerIp: 10
         # Minimum allowed username length
         minNicknameLength: 3
         # Maximum allowed username length
-        maxNicknameLength: 16
+        maxNicknameLength: 20
         # When this setting is enabled, online players can't be kicked out
         # due to "Logged in from another Location"
         # This setting will prevent potential security exploits.
-        ForceSingleSession: true
+        ForceSingleSession: false
         ForceSpawnLocOnJoin:
             # If enabled, every player that spawn in one of the world listed in
             # "ForceSpawnLocOnJoin.worlds" will be teleported to the spawnpoint after successful
@@ -131,10 +131,7 @@ settings:
             enabled: false
             # WorldNames where we need to force the spawn location
             # Case-sensitive!
-            worlds: 
-            - 'world'
-            - 'world_nether'
-            - 'world_the_end'
+            worlds: []
         # This option will save the quit location of the players.
         SaveQuitLocation: false
         # To activate the restricted user feature you need
@@ -149,23 +146,23 @@ settings:
         # Ban unknown IPs trying to log in with a restricted username?
         banUnsafedIP: false
         # Should unregistered players be kicked immediately?
-        kickNonRegistered: false
+        kickNonRegistered: true
         # Should players be kicked on wrong password?
-        kickOnWrongPassword: true
+        kickOnWrongPassword: false
         # Should not logged in players be teleported to the spawn?
         # After the authentication they will be teleported back to
         # their normal position.
         teleportUnAuthedToSpawn: false
         # Can unregistered players walk around?
-        allowMovement: false
+        allowMovement: true
         # After how many seconds should players who fail to login or register
         # be kicked? Set to 0 to disable.
-        timeout: 30
+        timeout: 60
         # Regex pattern of allowed characters in the player name.
         allowedNicknameCharacters: '[a-zA-Z0-9_]*'
         # How far can unregistered players walk?
         # Set to 0 for unlimited radius
-        allowedMovementRadius: 100
+        allowedMovementRadius: 10
         # Should we protect the player inventory before logging in? Requires ProtocolLib.
         ProtectInventoryBeforeLogIn: true
         # Should we deny the tabcomplete feature before logging in? Requires ProtocolLib.
@@ -180,7 +177,7 @@ settings:
         # Maximum Join authorized by IP
         maxJoinPerIp: 0
         # AuthMe will NEVER teleport players if set to true!
-        noTeleport: false
+        noTeleport: true
         # Regex syntax for allowed chars in passwords
         allowedPasswordCharacters: '[\x21-\x7E]*'
         # Threshold of the other accounts command, a value less than 2 means disabled.
@@ -202,9 +199,9 @@ settings:
         UnrestrictedName: []
     security:
         # Minimum length of password
-        minPasswordLength: 5
+        minPasswordLength: 4
         # Maximum length of password
-        passwordMaxLength: 30
+        passwordMaxLength: 20
         # Possible values: SHA256, BCRYPT, BCRYPT2Y, PBKDF2, SALTEDSHA512, WHIRLPOOL,
         # MYBB, IPB3, PHPBB, PHPFUSION, SMF, XENFORO, XAUTH, JOOMLA, WBB3, WBB4, MD5VB,
         # PBKDF2DJANGO, WORDPRESS, ROYALAUTH, CUSTOM (for developers only). See full list at
@@ -226,7 +223,7 @@ settings:
         # - '123456'
         # - 'password'
         # - 'help'
-        unsafePasswords: 
+        unsafePasswords:
         - '123456'
         - 'password'
         - 'qwerty'
@@ -236,10 +233,10 @@ settings:
         - 'help'
     registration:
         # Enable registration on the server?
-        enabled: true
+        enabled: false
         # Send every X seconds a message to a player to
         # remind him that he has to login/register
-        messageInterval: 5
+        messageInterval: 120
         # Only registered and logged in players can play.
         # See restrictions for exceptions
         force: true
@@ -252,7 +249,7 @@ settings:
         # CONFIRMATION = must repeat first argument (pass or email)
         # EMAIL_OPTIONAL = for password register: 2nd argument can be empty or have email address
         # EMAIL_MANDATORY = for password register: 2nd argument MUST be an email address
-        secondArg: 'CONFIRMATION'
+        secondArg: 'NONE'
         # Do we force kick a player after a successful registration?
         # Do not use with login feature below
         forceKickAfterRegister: false
@@ -301,10 +298,10 @@ GroupOptions:
     # Please note that the group name is case-sensitive, so 'admin' is different from 'Admin'
     # Otherwise your group will be wiped and the player will join in the default group []!
     # Example: registeredPlayerGroup: 'NotLogged'
-    registeredPlayerGroup: ''
+    registeredPlayerGroup: 'NotLoggedIn'
     # Similar to above, unregistered players can be set to the following
     # permissions group
-    unregisteredPlayerGroup: ''
+    unregisteredPlayerGroup: 'NotLoggedIn'
 Email:
     # Email SMTP server host
     mailSMTP: 'smtp.gmail.com'
@@ -331,7 +328,7 @@ Email:
     # Delay in minute for the recall scheduler
     delayRecall: 5
     # Blacklist these domains for emails
-    emailBlacklisted: 
+    emailBlacklisted:
     - '10minutemail.com'
     # Whitelist ONLY these domains for emails
     emailWhitelisted: []
@@ -347,7 +344,7 @@ Hooks:
     # Send player to this BungeeCord server after register/login
     sendPlayerTo: ''
     # Do we need to disable Essentials SocialSpy on join?
-    disableSocialSpy: false
+    disableSocialSpy: true
     # Do we need to force /motd Essentials command on join?
     useEssentialsMotd: false
 Protection:
@@ -358,20 +355,20 @@ Protection:
     # Countries allowed to join the server and register. For country codes, see
     # https://dev.bukkit.org/projects/authme-reloaded/pages/countries-codes
     # PLEASE USE QUOTES!
-    countries: 
+    countries:
     - 'US'
     - 'GB'
     # Countries not allowed to join the server and register
     # PLEASE USE QUOTES!
-    countriesBlacklist: 
+    countriesBlacklist:
     - 'A1'
     # Do we need to enable automatic antibot system?
-    enableAntiBot: true
+    enableAntiBot: false
     # The interval in seconds
     antiBotInterval: 5
     # Max number of players allowed to login in the interval
     # before the AntiBot system is enabled automatically
-    antiBotSensibility: 10
+    antiBotSensibility: 5
     # Duration in minutes of the antibot automatic system
     antiBotDuration: 10
     # Delay in seconds before the antibot activation
@@ -403,7 +400,7 @@ Security:
         # Remove passwords from console?
         removePassword: true
         # Copy AuthMe log output in a separate file as well?
-        logConsole: true
+        logConsole: false
     captcha:
         # Enable captcha when a player uses wrong password too many times
         useCaptcha: false

@@ -15,3 +15,8 @@ Recommended Setup
 -----------------
 * Clone this repo
 * symlink the plugins dir into your test server: `ln -s SnowCraft/plugins .`
+
+
+Configure
+------------
+- Database config of AuthMe
