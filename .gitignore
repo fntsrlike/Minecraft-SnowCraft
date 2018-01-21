@@ -13,3 +13,8 @@ plugins/dynmap/markers.yml
 plugins/dynmap/ids-by-ip.txt
 plugins/dynmap/web
 plugins/WorldEdit/schematics/
+plugins/Train_Carts/*.dat
+plugins/Train_Carts/*.groupdata
+plugins/Train_Carts/tickets.yml
+plugins/Train_Carts/TrainProperties.yml
+plugins/Train_Carts/SavedTrainProperties.yml

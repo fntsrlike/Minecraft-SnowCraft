@@ -1,7 +1,7 @@
 default:
   soundEnabled: true
   displayName: ''
-  allowPlayerTake: false
+  allowPlayerTake: true
   requirePoweredMinecart: false
   trainCollision: true
   collisionDamage: 1.0
@@ -42,7 +42,7 @@ default:
 admin:
   soundEnabled: true
   displayName: ''
-  allowPlayerTake: false
+  allowPlayerTake: true
   requirePoweredMinecart: false
   trainCollision: true
   collisionDamage: 1.0
@@ -83,7 +83,7 @@ admin:
 spawner:
   soundEnabled: true
   displayName: ''
-  allowPlayerTake: false
+  allowPlayerTake: true
   requirePoweredMinecart: false
   trainCollision: true
   collisionDamage: 1.0
