@@ -24,3 +24,4 @@ plugins/Skinny/**/*.dat
 plugins/Skinny/**/timestamp
 plugins/Multiverse-Core/scripts/
 plugins/Multiverse-Core/worlds.yml
+plugins/Multiverse-Portals/portals.yml
