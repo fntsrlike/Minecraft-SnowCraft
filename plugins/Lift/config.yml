@@ -6,7 +6,7 @@ metrics: true
 maxLiftArea: 16
 maxHeight: 256
 debug: false
-autoPlace: false
+autoPlace: true
 preventEntry: false
 preventLeave: true
 checkFloor: false
@@ -17,6 +17,8 @@ floorBlocks:
 redstone: false
 baseBlockSpeeds:
   IRON_BLOCK: 0.5
+  GOLD_BLOCK: 0.75
+  DIAMOND_BLOCK: 1.0
 STRING_oneFloor: There is only one floor.
 STRING_currentFloor: 'Current Floor:'
 STRING_dest: '§1Dest:'
