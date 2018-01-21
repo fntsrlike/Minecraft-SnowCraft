@@ -5,6 +5,6 @@
 # Debug: Toggles the debug logging
 
 Enabled: true
-Update-Type: DOWNLOAD
+Update-Type: ANNOUNCE
 Release-Type: RELEASE
 Debug: false

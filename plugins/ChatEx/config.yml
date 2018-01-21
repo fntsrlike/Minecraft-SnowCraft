@@ -15,8 +15,8 @@
 # Messages.JoinAndQuit.Enabled: Do you want to change the join and the quit messages?
 
 enable: true
-message-format: '%faction %prefix%displayname%suffix: %message'
-global-message-format: '%faction &9[%world] %prefix%displayname%suffix: &e%message'
+message-format: '%faction <%prefix%displayname%suffix> %message'
+global-message-format: '%faction &9(%world) <%prefix%displayname%suffix> &e%message'
 ranged-mode: false
 chat-range: 100.0
 multi-prefixes: false
@@ -26,7 +26,7 @@ Priority: LOWEST
 Debug: false
 Locale: en-EN
 Ads:
-  Enabled: true
+  Enabled: false
   Bypass:
   - 127.0.0.1
   - my-domain.com
