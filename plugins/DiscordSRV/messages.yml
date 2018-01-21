@@ -19,8 +19,8 @@
 #
 # DiscordToMinecraftAllRolesSeparator: the separator used in between roles in %allroles%
 #
-DiscordToMinecraftChatMessageFormat: "[&bDiscord &r| %toprolecolor%%toprole%&r] %username% » %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "[&bDiscord&r] %username% » %message%"
+DiscordToMinecraftChatMessageFormat: "<&9(Discord)&r %username%> %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "<&9(Discord)&r %username%> %message%"
 DiscordToMinecraftAllRolesSeparator: " | "
 
 # Minecraft -> Discord message
@@ -47,8 +47,8 @@ DiscordToMinecraftAllRolesSeparator: " | "
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
+MinecraftChatToDiscordMessageFormat: "`<%displayname%>` %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "`<%displayname%>` %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
@@ -77,7 +77,7 @@ ChatChannelHookMessageFormat: "%channelcolor%[%channelnickname%]&r %message%"
 # %line%:  line from the console
 #           example: [DiscordSRV] Enabling DiscordSRV vX.Y
 #
-DiscordConsoleChannelFormat: "[%date% %level%] %line%"
+DiscordConsoleChannelFormat: "`[%date% %level%]` `%line%`"
 
 # Discord chat channel !c command error message
 # Used when an error occurs with permissions for the player to run the command, not an error running the command itself
@@ -97,8 +97,8 @@ DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried runni
 # DiscordChatChannelListCommandFormatOnlinePlayers: the message at the beginning of the list, before all of the player names
 # DiscordChatChannelListCommandFormatNoOnlinePlayers: used instead for when no players are online
 #
-DiscordChatChannelListCommandFormatOnlinePlayers: "**Online players (%playercount%):**"
-DiscordChatChannelListCommandFormatNoOnlinePlayers: "**No online players**"
+DiscordChatChannelListCommandFormatOnlinePlayers: "**在線玩家 (%playercount%)：**"
+DiscordChatChannelListCommandFormatNoOnlinePlayers: "**沒有玩家在線上**"
 
 # Minecraft -> Discord player join/leave messages
 #
@@ -109,9 +109,9 @@ DiscordChatChannelListCommandFormatNoOnlinePlayers: "**No online players**"
 # %date%:        current date & time
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftPlayerJoinMessageFormat: ":heavy_plus_sign: **%displayname% joined the server**"
-MinecraftPlayerFirstJoinMessageFormat: ":tada: **%displayname% joined the server for the first time**"
-MinecraftPlayerLeaveMessageFormat: ":heavy_minus_sign: **%displayname% left the server**"
+MinecraftPlayerJoinMessageFormat: ":tada: `%displayname%` **已上線**"
+MinecraftPlayerFirstJoinMessageFormat: ":tada: **是第一次上線的玩家呢！%displayname% 你說是不是呀～**"
+MinecraftPlayerLeaveMessageFormat: ":zzz: `%displayname%` **已離線**"
 
 # Minecraft -> Discord player death messages
 #
@@ -135,7 +135,7 @@ MinecraftPlayerDeathMessageFormat: ":skull: **%deathmessage%**"
 # %date%:        current date & time
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftPlayerAchievementMessagesFormat: ":medal: **%displayname% has just earned the achievement %achievement%!**"
+MinecraftPlayerAchievementMessagesFormat: ":medal: **%displayname% 剛獲得了 %achievement% 成就！**"
 
 # Channel topic updater messages
 # This is all the stuff related to automatically updating the chat or console channel's topics with server information
@@ -162,22 +162,22 @@ MinecraftPlayerAchievementMessagesFormat: ":medal: **%displayname% has just earn
 # %maxmemorygb%:   max memory of the JVM in GB
 # %tps%:           average TPS of the server
 #
-ChannelTopicUpdaterChatChannelTopicFormat: "%playercount%/%playermax% players online | %totalplayers% unique players ever joined | Server online for %uptimemins% minutes | Last update: %date%"
-ChannelTopicUpdaterConsoleChannelTopicFormat: "TPS: %tps% | Mem: %usedmemorygb%GB used/%freememorygb%GB free/%maxmemorygb%GB max | %serverversion%"
-ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "Server is offline | %totalplayers% unique players ever joined"
-ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Server is offline | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicFormat: "在線玩家 %playercount%/%playermax% | 伺服器努力運轉了 %uptimehours% 小時了！ | 最後更新： %date%"
+ChannelTopicUpdaterConsoleChannelTopicFormat: "不要在這個頻道聊天！ | TPS: %tps% | Mem: %usedmemorygb%GB used/%freememorygb%GB free/%maxmemorygb%GB max | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "伺服器離線中"
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "不要在這個頻道聊天！ | 伺服器離線中 | %serverversion%"
 
 # Discord command message
 # This is the message sent to players when they run "/discord". It's recommended to leave command syntax as a part of this
 #
-DiscordCommandFormat: "&bJoin us on Discord at http://discord.gg/changethisinmessages.yml. For command help, do \"/discord ?\""
+DiscordCommandFormat: |
 
 # Server startup/shutdown messages
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ":white_check_mark: **Server has started**"
-DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped**"
+DiscordChatChannelServerStartupMessage: ":white_check_mark: **伺服器上線啦！**"
+DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **伺服器關閉中……**"
 
 # Server watchdog message
 #
@@ -204,5 +204,5 @@ ServerWatchdogMessage: "`%date%` %guildowner%, the server room is on :fire::bang
 #                         %username%: the discord name of the Discord user that the user's Minecraft account was linked to
 #
 CodeGenerated: "Your link code is %code%. PM the bot on Discord (%botname%) containing just this code as the message to link your accounts."
-DiscordAccountLinked: "Your Discord account has been linked to %name% (%uuid%)"
-MinecraftAccountLinked: "&bYour UUID has been linked to Discord user %username% (%id%)"
+DiscordAccountLinked: "Discord 帳號已與遊戲帳號 %name% (%uuid%) 綁定"
+MinecraftAccountLinked: "&a您的帳號已與 Discord 帳號 %username% (%id%) 綁定"

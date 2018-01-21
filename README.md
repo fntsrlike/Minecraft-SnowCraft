@@ -25,3 +25,5 @@ Configure
 - Change `plugins/dynmap/configuration.txt`:
     - `skin_url`
     - `defaultworld`
+- Change `plugins/DiscordSRV/config.yml`:
+    - `BotToken`
