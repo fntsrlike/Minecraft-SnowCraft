@@ -21,6 +21,7 @@ Configure
 ------------
 - Database config of AuthMe
 - Database config of CoreProtect
+- Database config of SkinnySnowServer
 - Change `plugins/dynmap/configuration.txt`:
     - `skin_url`
     - `defaultworld`
