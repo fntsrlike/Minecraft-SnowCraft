@@ -22,3 +22,5 @@ plugins/Train_Carts/SavedTrainProperties.yml
 plugins/WorldGuard/worlds/
 plugins/Skinny/**/*.dat
 plugins/Skinny/**/timestamp
+plugins/Multiverse-Core/scripts/
+plugins/Multiverse-Core/worlds.yml
