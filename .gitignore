@@ -5,6 +5,7 @@
 *.lck
 *.log
 *.sqlite
+*.sqlite3
 
 plugins/AuthMe/*.dat
 plugins/AuthMe/playerdata/
