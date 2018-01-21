@@ -20,3 +20,5 @@ plugins/Train_Carts/tickets.yml
 plugins/Train_Carts/TrainProperties.yml
 plugins/Train_Carts/SavedTrainProperties.yml
 plugins/WorldGuard/worlds/
+plugins/Skinny/**/*.dat
+plugins/Skinny/**/timestamp
