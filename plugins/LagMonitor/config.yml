@@ -27,7 +27,7 @@ securityMangerBlockingCheck: false
 # 
 # If the developer is unreachable and it's too spamy for you can deactivite it here. Then you still get the warning
 # but you don't see the stacktrace.
-hideStacktrace: false
+hideStacktrace: true
 
 # Show the warning from above only once per plugin
 oncePerPlugin: false
