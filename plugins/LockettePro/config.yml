@@ -8,7 +8,7 @@ enable-uuid-support: false
 block-interfere-placement: true
 block-item-transfer-in: false
 block-item-transfer-out: true
-block-hopper-minecart: remove
+block-hopper-minecart: true
 cache-time-seconds: 0
 private-signs:
 - '[Private]'
@@ -37,6 +37,20 @@ lockables:
 - ACACIA_DOOR
 - DARK_OAK_DOOR
 - IRON_DOOR_BLOCK
+- DISPENSER
+- PISTON
+- GOLD_BLOCK
+- IRON_BLOCK
+- MOB_SPAWNER
+- DIAMOND_ORE
+- JUKEBOX
+- ENCHANTING_TABLE
+- COMMAND_BLOCK
+- REDSTONE_BLOCK
+- DROPPER
+- SLIME
+- TRAPDOOR
+- IRON_TRAPDOOR
 protection-exempt:
 - nothing
 lock-expire: false
