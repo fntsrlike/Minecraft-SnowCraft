@@ -12,3 +12,4 @@ plugins/dynmap/*.pending
 plugins/dynmap/markers.yml
 plugins/dynmap/ids-by-ip.txt
 plugins/dynmap/web
+plugins/WorldEdit/schematics/
