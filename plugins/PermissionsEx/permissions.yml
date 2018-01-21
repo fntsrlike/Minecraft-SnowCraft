@@ -1,7 +1,223 @@
 groups:
-  default:
+  NotLoggedIn:
+    permissions:
+    - slack.hide.chat
+  Builder:
+    permissions:
+    - discordsrv.player
+    - -discordsrv.sync.*
+    - discordsrv.sync.333260598697656340
+    - train.build.launcher
+    - admincmd.warp.tp.*
+    - admincmd.warp.tp
+    - SBP.Open
+    - dynmap.marker.list
+    - dynmap.marker.delete
+    - dynmap.marker.add
+    - dynmap.marker.movehere
+    - dynmap.marker.update
+    - admincmd.home.delete
+    - admincmd.home.edit
+    - admincmd.home.tp
+    - admincmd.home.set
+    - admincmd.teleport.back
+    - admincmd.teleport.requests.tpahere
+    - admincmd.teleport.requests.tpahere.*
+    - admincmd.teleport.requests.tpa
+    - admincmd.teleport.requests.tpa.*
+    - admincmd.spawn.spawn
+    - admincmd.spawn.tp
+    - admincmd.player.loc
+    - admincmd.player.msg
+    - admincmd.player.reply
+    - admincmd.player.ip
+    - admincmd.player.ip.other
+    - admincmd.player.list
+    - treelogging.commands.execute.recording
+    - treelogging.commands.execute
+    - coreprotect.inspect
+    - se.*
+    - multiverse.core.list.worlds
+    - multiverse.help
+    - multiverse.teleport.self.*
+    - multiverse.core.spawn.self
+    - multiverse.portal.info
+    - multiverse.portal.list
+    - multiverse.portal.access.*
+    - multiverse.access.*
+    - multiverse.portals.use.*
+    - multiverse.signportal.create
+    - multiverse.signportal.validate
+    - multiverse.signportal.*
+    - chatex.chat.*
+    - chatex.allowchat
+    - minecraft.command.banlist
+    - minecraft.command.help
+    - minecraft.command.kill
+    - minecraft.command.list
+    - minecraft.command.tell
+    - minecraft.command.tellraw
+    - worldguard.region.info.*
+    - worldguard.region.addmember.own.*
+    - worldguard.region.removemember.own.*
+    - worldguard.region.list.own
+    - worldguard.region.teleport.own.*
+    - worldguard.region.teleport.member.*
+    - worldguard.region.flag.regions.own.*
+    - worldguard.region.flag.flags.passthrough.*
+    - worldguard.region.flag.flags.pvp.*
+    - worldguard.region.flag.flags.mob-damage.*
+    - worldguard.region.flag.flags.creeper-explosion.*
+    - worldguard.region.flag.flags.other-explosion.*
+    - worldguard.region.flag.flags.enderman-grief.*
+    - worldguard.region.flag.flags.ghast-fireball.*
+    - worldguard.region.flag.flags.sleep.*
+    - worldguard.region.flag.flags.tnt.*
+    - worldguard.region.flag.flags.fire-spread.*
+    - worldguard.region.flag.flags.lava-fire.*
+    - worldguard.region.flag.flags.chest-access.*
+    - worldguard.region.flag.flags.lightning.*
+    - worldguard.region.flag.flags.pistons.*
+    - worldguard.region.flag.flags.use.*
+    - worldguard.region.flag.flags.vehicle-place.*
+    - worldguard.region.flag.flags.vehicle-destroy.*
+    - worldguard.region.flag.flags.snow-fall.*
+    - worldguard.region.flag.flags.snow-melt.*
+    - worldguard.region.flag.flags.ice-form.*
+    - worldguard.region.flag.flags.ice-melt.*
+    - worldguard.region.flag.flags.mushroom-growth.*
+    - worldguard.region.flag.flags.leaf-decay.*
+    - worldguard.region.flag.flags.grass-growth.*
+    - worldguard.region.flag.flags.mycelium-spread.*
+    - worldguard.region.flag.flags.vine-growth.*
+    - worldguard.region.flag.flags.invincible.*
+    - worldguard.region.flag.flags.greeting.*
+    - worldguard.region.flag.flags.farewell.*
+    - worldguard.region.flag.flags.teleport.*
+    - worldguard.region.flag.flags.spawn.*
+    - worldguard.region.flag.flags.mob-spawning.*
+    - worldguard.region.flag.flags.deny-spawn.*
+    - worldguard.region.flag.flags.entity-painting-destroy.*
+    - worldguard.region.flag.flags.entity-item-frame-destroy.*
+    - worldguard.region.flag.flags.item-pickup.*
+    - worldguard.region.flag.flags.item-drop.*
+    - worldguard.region.flag.flags.enderpearl.*
+    - worldguard.region.flag.flags.game-mode.*
+    - train.command.globalproperties
+    - train.command.properties
+    - train.command.destroy
+    - train.command.destroyall
+    - train.command.reroute
+    - train.command.reload
+    - train.command.break
+    - train.command.breakblock
+    - train.command.setpublic
+    - train.command.setowners
+    - train.command.settags
+    - train.command.mobenter
+    - train.command.setdestination
+    - train.command.playerenter
+    - train.command.playerexit
+    - train.command.pickup
+    - train.command.setlinking
+    - train.command.keepchunksloaded
+    - train.command.pushing
+    - train.command.slowdown
+    - train.command.setcollide
+    - train.command.setspeedlimit
+    - train.command.setpoweredcartrequirement
+    - train.command.rename
+    - train.command.displayname
+    - train.command.fixbugged
+    - train.command.manualmove
+    - train.command.saveall
+    - train.build.station
+    - train.build.trigger
+    - train.build.spawner
+    - train.build.destination
+    - train.build.switcher
+    - train.build.destructor
+    - train.build.detector
+    - train.build.ejector
+    - train.build.property
+    - train.build.collector
+    - train.build.depositor
+    - train.build.elevator
+    - train.build.teleporter
+    - train.build.blocker
+    - train.build.wait
+    - train.build.crafter
+    - train.build.ticket
+    - train.build.announcer
+    - train.build.effect
+    - train.place.minecart
     options:
       default: true
+    worlds:
+      GammaWorld:
+        permissions: []
+      AlphaWorld:
+        permissions:
+        - admincmd.player.fly
+  MOD:
     permissions:
-    - modifyworld.*
+    - lockettepro.reload
+    - discordsrv.admin
+    - skinny.*
+    - fastlogin.*
+    - -lockettepro.admin.use
+    - -lockettepro.admin.interfere
+    - -lockettepro.admin.edit
+    - SBP.*
+    - dynmap.*
+    - skinrestorer.*
+    - permissions.*
+    - bukkit.command.*
+    - minecraft.command.*
+    - admincmd.server.*
+    - admincmd.*
+    - multiverse.*
+    - worldguard.region.*
+    - lagmonitor.*
+    inheritance:
+    - VIP
+    - Builder
+    options:
+      prefix: '&4[MOD]&f '
+  VIP:
+    permissions:
+    - skinny.head.get
+    - admincmd.player.god
+    - discordsrv.sync.333256279726227456
+    - dynmap.marker.*
+    - worldedit.*
+    - admincmd.player.gamemode
+    - minecraft.command.tp
+    inheritance:
+    - Builder
+    options:
+      prefix: '&6[VIP]&f '
+  TeamAlpha:
+    permissions:
+    - discordsrv.sync.333587470342029314
+    inheritance:
+    - Builder
+  TeamOak:
+    permissions:
+    - discordsrv.sync.333587368185430027
+    inheritance:
+    - Builder
+  TeamNovice:
+    permissions:
+    - discordsrv.sync.333295986011144195
+    inheritance:
+    - Builder
+  TeamNether:
+    inheritance:
+    - Builder
+    permissions:
+    - discordsrv.sync.335032729626345473
+  TeamEnd:
+    inheritance:
+    - Builder
 schema-version: 1
