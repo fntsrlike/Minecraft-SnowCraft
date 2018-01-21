@@ -13,10 +13,10 @@ infowindow: <div class=\"infowindow\"><span style=\"font-size:120%;">%regionname
   /><span style="font-weight:bold;">%flags%</span></div>
 regionstyle:
   strokeColor: '#FF0000'
-  strokeOpacity: 0.8
-  strokeWeight: 3
+  strokeOpacity: 0.3
+  strokeWeight: 2
   fillColor: '#FF0000'
-  fillOpacity: 0.35
+  fillOpacity: 0.15
   unownedStrokeColor: '#00FF00'
 visibleregions: []
 hiddenregions: []
