@@ -20,6 +20,7 @@ Recommended Setup
 Configure
 ------------
 - Database config of AuthMe
+- Database config of CoreProtect
 - Change `plugins/dynmap/configuration.txt`:
     - `skin_url`
     - `defaultworld`
