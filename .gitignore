@@ -8,9 +8,7 @@
 
 plugins/AuthMe/*.dat
 plugins/AuthMe/playerdata/
+plugins/dynmap/*.pending
 plugins/dynmap/markers.yml
 plugins/dynmap/ids-by-ip.txt
-plugins/dynmap/web/tiles/*
-!plugins/dynmap/web/tiles/_markers_/
-plugins/dynmap/web/tiles/_markers_/*
-!plugins/dynmap/web/tiles/_markers_/*.png
+plugins/dynmap/web

@@ -20,3 +20,6 @@ Recommended Setup
 Configure
 ------------
 - Database config of AuthMe
+- Change `plugins/dynmap/configuration.txt`:
+    - `skin_url`
+    - `defaultworld`
